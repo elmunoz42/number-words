@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha384-HzUaiJdCTIY/RL2vDPRGdEQHHahjzwoJJzGUkYjHVzTwXFQ2QN/nVgX7tzoMW3Ov" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css" charset="utf-8">
+        <title>Numbers to Words</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Numbers to Words</h1>
+
+
+            <form action="/" method="post">
+                <label for="userInput">Enter your number</label>
+                <input type="number" name="userInput">
+
+                <button type="submit" class="btn btn-success">Submit!</button>
+            </form>
+
+            {% if result is not empty %}
+                <h4>Your number is: {{result}}<h4>
+            {% endif %}
+
+        </div>
+    </body>
+</html>
